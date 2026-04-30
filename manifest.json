@@ -97,15 +97,11 @@
         "scripting",
         "tts",
         "offscreen",
-        "activeTab"
+        "activeTab",
+        "webNavigation"
     ],
     "host_permissions": ["<all_urls>"],
     "content_scripts": [
-        {
-            "matches": ["<all_urls>"],
-            "run_at": "document_start",
-            "js": ["./content/pdf_redirect.js"]
-        },
         {
             "matches": ["<all_urls>"],
             "js": ["./content/display/display.js", "./content/pdf.js"]
